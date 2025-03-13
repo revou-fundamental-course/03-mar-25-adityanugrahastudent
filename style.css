@@ -1,0 +1,222 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo img {
+  height: 50px; /* Adjust as needed */
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f39c12; /* Highlight color */
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Section Styling */
+section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Vision & Mission List */
+#vision-mission ul {
+  padding-left: 20px;
+}
+
+#vision-mission ul li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+  }
+
+  .menu-toggle {
+      display: block; /* Show menu button on mobile */
+  }
+
+  nav {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #333;
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul {
+      flex-direction: column;
+      padding: 10px 0;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  .nav-active {
+      display: flex;
+  }
+}
+/* Welcome Section */
+.welcome img {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+
+/* Our Facilitation */
+
+.facilities {
+  display: flex;
+  justify-content: center; /* Centers the images */
+  gap: 20px; /* Adds spacing between images */
+  flex-wrap: wrap; /* Allows wrapping if screen is too small */
+}
+
+.facility {
+  text-align: center; 
+  flex: 1; /* Distributes space evenly */
+  max-width: 300px; /* Adjust as needed */
+}
+
+.icon {
+  width: 100%;
+  max-width: 300px; /* Adjust to fit design */
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+
+
+/* Profile Us Section */
+.profile {
+  text-align: center;
+  padding: 40px 20px;
+  background: #eef2f3;
+}
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 15px; /* Centers the image */
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+  border: 3px solid #ccc; /* Optional: Adds a subtle border */
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Message Us Section */
+.message-us {
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, select, textarea {
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Info Box */
+.info-box {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+  margin-top: 20px;
+}
